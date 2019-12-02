@@ -1,30 +1,142 @@
 En landningssida (startsida)
     som kund vill jag kunna navigera på sidan för att hitta det jag vill köpa lättare
+        toppen på sidan
+        loggan
+        startsida
+        kategorier dropdown
+        varukorg
     som kund vill jag kunna se min varukorg för att hålla koll på mina köpa
+        ikon
+        längst till höger
+        dropdown på klick
+        bilder på produkterna
+        öka minska antal
+        ta bort
+        knapp länkad till kassan
+        totalpris
+        titel och pris på produkterna
     som kund vill jag kunna hitta kontaktuppgifter för att kunna kontakta företaget
+        footer
+        mejl
+        telefon
+        address
+        till toppen länk
+        ikoner
     som produktägare vill jag kunna presentera erbjudanden för att sälja mer
+        bilder
+        karusell
+        text
     som produktägare vill jag presentera vår logga för att man ska känna igen sig.
+
 
 En produktsida
     som kund vill jag kunna se produkterna för att veta vad jag köper
+        imgtag
+        bilden hämtas från objektet
     som kund vill jag kunna navigera bland olika kategorier för att lättare att hitta
-    som kund vill jag kunna se priset på produkterna för att veta hur mycket jag ska betala
-    som kund vill jag kunna filtrera för attt lättare hitta
-    som kund vill jag kunna se mer information om produkten för att veta vad jag köper
+        sidonavigering?
+        kategorierna
+        öppna stänga?
 
-En kassasida 
-    som kund vill jag kunna se hur mycket jag ska betala för att veta hur mycket jag ska betala
-    som kund vill jag se bilder på produkteran för att kunna se vad jag tänkt köpa
-    som produktägare vill jag att kunden ska kunna fylla i sin information så att man vet vart det ska skickas
-    som kund vill jag ta bort produkter ifall man ångrar sig
-    som kund vill jag kunna öka och minska antalet för att göra det smidigare att köpa flera saker
+    som kund vill jag kunna se priset på produkterna för att veta hur mycket jag ska betala
+        under imgtaggen på högersida
+        priset hämtas från objektet
+    som kund vill jag kunna se titeln på produkten för att veta vad den heter
+        titeln hämtas från objektet
+        under imgtaggen på vänster sidan
+
+    som kund vill jag kunna filtrera för attt lättare hitta
+        över produkterna 
+        kunna sortera efter pris
+        kunna sortera efter titel
+        kunna sortera efter nyaste?
+        
+
     som kund vill jag kunna se mer information om produkten för att veta vad jag köper
+        modal fixed i mitten
+        hämta info från objektet
+        lägg till i varukorg
+        till kassan knapp
+        stänga modalen knapp? utanför?
+        
+En kassasida 
+    som kund vill jag kunna se priset för att veta hur mycket produkten kostar
+        hämtas från objektet
+        ligger till höger
+        i kronor
+
+    som kund vill jag kunna se totalbeloppet för att vet hur mycket jag ska betala
+        räknas ut genom att addera priserna
+        ligger under produkterna till höger
+        i kronor
+
+    som kund vill jag se bilder på produkteran för att kunna se vad jag tänkt köpa
+        hämtas från objektet
+        ligger till vänster
+
+    som produktägare vill jag att kunden ska kunna fylla i sin information så att man vet vart det ska skickas
+        formulär ligger under alla produkterna
+        validering
+        mejl
+        address
+        telefon
+        namn/efternamn
+
+    som kund vill jag ta bort produkter ifall man ångrar sig
+        kryssknapp
+        ligger i högra översta hörnet
+        uppdaterar totalbeloppet
+    som kund vill jag kunna öka och minska antalet för att göra det smidigare att köpa flera saker
+        plus och minus 
+        antal
+        - 1 +
+        uppdaterar totalbeloppet
+        till vänster om priset
+
+    som kund vill jag kunna se mer information om produkten för att veta vad jag köper
+        info hämtas från objektet
+        ligger till höger om bilden
+        i en lista?
+
+    som kund vill jag kunna välja betalalternativ för att välja det som passar
+        formulär
+        radio 
+        kort
+        swish
+        faktura
+        ligger under kundens kontaktuppgifter
+
+    som kund vill jag kunna slutföra köpet för att slutföra köpet
+        knapp
+        som länkas till tacksida
+        formuläret måste vara ifyllt
+        längst ner
 
 varukorg
     som kund vill jag kunna komma åt innehållet i varukorgen för att se vad som finns
+        dropdown?
+        klick
+        hämtar info från array
+
     som kund vill jag kunna öka/minska innehållet för att göra det smidigare att köpa flera saker
+        - 1 +
+        uppdaterar totalbeloppet
+        till vänster om priset
+
     som kund vill jag kunna se bild på produkten för att veta vad jag köper
+        hämtar från arrayen
+        ligger till höger
+
     som kund vill jag kunna se priset för att veta hur mycket jag ska betala
+        hämtar från arrayen
+        ligger till vänster
+
     som kund vill jag kunna lägga till produkter för att hålla produkterna samlade
+        push i arrayen
+
     som produktägare vill jag att man ska kunna gå till kassan för att kunna slutföra köp snabbare
+        knapp till kassansidan
+        ligger längst ner i dropdown till höger
+        
+
 
