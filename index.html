@@ -7,12 +7,14 @@
         <script src="js/jquery-3.4.1.min.js"></script>
         <script  src="js/main.js"></script> 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu+Point&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/79397e9fed.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header id="header">
+            
             <ul id="navbar">
-                <li id="category-toggle">kategorier</li>
-                <div id="small-triangle" class="category"></div>
+                <li><i class="fas fa-tv"></i></li>
+                <li id="category-toggle">Kategorier <i class="fas fa-caret-right category"></i></li>   
                 <li class="category">Action</li>
                 <li class="category">Thriller</li>
                 <li class="category">Drama</li>
@@ -20,18 +22,22 @@
                 <li class="category">Romantik</li>
                 <li class="category">Komedi</li>
             </ul>
+            <div><i class="fas fa-shopping-basket"></i></div>
+            
         </header>
         <div id="main-poster-container">
             <img id="main-poster" src="images/bigposter.jpg" alt="poster"/>    
-            <span>Välkommen till film.se</span>
+            <span>VÄLKOMMEN TILL FILM.SE </span>
         </div>
+
         <div id="category-container">
             <div><span>Action</span><img src="images/action.jpg"/></div>
             <div><span>Skräck</span><img src="images/thriller.jpg"/></div>
             <div><span>Drama</span><img src="images/drama.jpg"/></div>
-            <div><span>Thriller</span><img src="images/skräck.jpg"/></div>
+            <div><span>Thriller</span><img src="images/skräck.jpg"/></div>
             <div><span>Komedi</span><img src="images/komedi.jpg"/></div>
             <div><span>Romantik</span><img src="images/romantik.jpg"/></div>
         </div>
+        
     </body>
-</html>
+</html> 

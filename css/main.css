@@ -5,61 +5,74 @@ body {
 
 #header {
   position: absolute;
-  background-image: linear-gradient(black, rgba(0, 0, 0, 0.904));
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0.8));
   width: 100%;
-  height: 70px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.904); }
+  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.8);
+  padding: 0; }
   #header #navbar {
     list-style-type: none;
-    margin: auto 0;
-    color: #ebebeb;
+    color: #d8d8d8;
     display: flex;
     width: 90%;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0 5%;
+    padding: 0;
     font-size: 0.7em; }
-    #header #navbar #small-triangle {
-      width: 0;
-      height: 0;
-      border-left-width: 10px;
-      border-top-width: 7px;
-      border-bottom-width: 7px;
-      border-style: solid;
-      border-color: transparent transparent transparent white;
-      margin: auto 0; }
+    #header #navbar li {
+      margin: auto 0;
+      cursor: pointer; }
+      #header #navbar li .fa-tv {
+        font-size: 2em; }
+    #header #navbar #category-toggle {
+      font-size: 1.3em; }
+      #header #navbar #category-toggle i {
+        border: 0; }
     #header #navbar .category {
       opacity: 0;
       transition: all 0.7s;
       position: relative;
       right: 10px; }
     #header #navbar .category:hover {
-      border-bottom: 1px solid white;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.747); }
+      border-bottom: 1px solid white; }
+  #header div {
+    position: fixed;
+    right: 5%;
+    top: 3%;
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    box-shadow: 0 0 20px 3px black;
+    cursor: pointer; }
+    #header div .fa-shopping-basket {
+      color: #6f0b0b;
+      font-size: 1.7em;
+      line-height: 70px; }
 
 #main-poster-container {
   width: 100%;
-  height: 500px;
+  height: 600px;
   overflow: hidden; }
   #main-poster-container #main-poster {
-    width: 100%;
-    object-fit: cover; }
+    width: 100%; }
   #main-poster-container span {
     position: absolute;
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
-    top: 250px;
+    top: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 5px black;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(111, 11, 11, 0.8);
     padding: 20px; }
 
 #category-container {
   padding-top: 50px;
-  background-image: linear-gradient(black, #2e2e2e);
+  background-image: linear-gradient(#181818, #2e2e2e);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
