@@ -1,19 +1,60 @@
-#product-container {
-    width:100%;
+#container {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-image: linear-gradient(rgb(24, 24, 24), rgb(46, 46, 46));
-    box-sizing: border-box;
-    padding:0 10%;
-    .imgcontainer {
-        width:26%;
-        object-fit: cover;
+    #side-filter-overlay {
+        width:80px;
         overflow: hidden;
-        color:white;
-        img {
-            width:100%;
-            
+        border-right: 2px solid rgb(0, 0, 0);
+        background-image: linear-gradient(rgb(88, 0, 0), rgb(47, 10, 10)); 
+        transition: all 0.7s;
+        #side-filter {
+            width:30vw; 
+            // background-image: linear-gradient(rgba(111, 11, 11, 0.555), rgba(51, 6, 6, 0.329));
+            color:rgb(255, 255, 255);
+            display: flex;
+            font-size: 1.5em;
+            justify-content: flex-start;
+            i {
+             
+                text-align: center;
+                width:80px;
+                height:80px;
+                line-height: 80px;
+          
+                cursor: pointer;
+            }
+            i:hover {
+                background-color: rgba(0, 0, 0, 0.486);
+            }
+            #filter-options {
+                padding-left:20px;
+            }
         }
     }
-} 
+    #product-container {
+        width:100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-image: linear-gradient(rgb(24, 24, 24), rgb(46, 46, 46));
+        box-sizing: border-box;
+        padding:0 10%;
+        .imgcontainer {
+            width:26%;
+            object-fit: cover;
+            overflow: hidden;
+            color:white;
+            img {
+                width:100%;
+                transition: all 0.7s;
+                opacity: 0.6;
+                cursor: pointer;
+                filter:grayscale(0.3);
+            }
+            img:hover {
+                opacity: 1;
+                filter:grayscale(0);
+                
+            }
+        }
+    } 
+}

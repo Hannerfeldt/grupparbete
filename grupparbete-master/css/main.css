@@ -29,7 +29,7 @@
       opacity: 0;
       transition: all 0.7s;
       position: relative;
-      right: 10px; }
+      right: 50px; }
     #header #navbar .category:hover {
       border-bottom: 1px solid white; }
   #header div {
@@ -50,10 +50,11 @@
 
 #main-poster-container {
   width: 100%;
-  height: 600px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 700px; }
   #main-poster-container #main-poster {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   #main-poster-container h1 {
     position: absolute;
     color: white;
@@ -64,28 +65,59 @@
     position: absolute;
     font-size: 2.5em;
     color: white;
-    top: 300px;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 0 0 5px black;
-    background-color: rgba(111, 11, 11, 0.8);
-    padding: 20px; }
+    background-color: #6f0b0b;
+    padding: 20px 50px;
+    border-radius: 5px; }
 
-#product-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  background-image: linear-gradient(#181818, #2e2e2e);
-  box-sizing: border-box;
-  padding: 0 10%; }
-  #product-container .imgcontainer {
-    width: 26%;
-    object-fit: cover;
+#container {
+  display: flex; }
+  #container #side-filter-overlay {
+    width: 80px;
     overflow: hidden;
-    color: white; }
-    #product-container .imgcontainer img {
-      width: 100%; }
+    border-right: 2px solid black;
+    background-image: linear-gradient(#580000, #2f0a0a);
+    transition: all 0.7s; }
+    #container #side-filter-overlay #side-filter {
+      width: 30vw;
+      color: white;
+      display: flex;
+      font-size: 1.5em;
+      justify-content: flex-start; }
+      #container #side-filter-overlay #side-filter i {
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        cursor: pointer; }
+      #container #side-filter-overlay #side-filter i:hover {
+        background-color: rgba(0, 0, 0, 0.486); }
+      #container #side-filter-overlay #side-filter #filter-options {
+        padding-left: 20px; }
+  #container #product-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(#181818, #2e2e2e);
+    box-sizing: border-box;
+    padding: 0 10%; }
+    #container #product-container .imgcontainer {
+      width: 26%;
+      object-fit: cover;
+      overflow: hidden;
+      color: white; }
+      #container #product-container .imgcontainer img {
+        width: 100%;
+        transition: all 0.7s;
+        opacity: 0.6;
+        cursor: pointer;
+        filter: grayscale(0.3); }
+      #container #product-container .imgcontainer img:hover {
+        opacity: 1;
+        filter: grayscale(0); }
 
 body {
   margin: 0;
@@ -108,29 +140,32 @@ body {
     color: white;
     margin: 10px 0;
     border-radius: 5px; }
-    #category-container div span {
-      position: absolute;
-      transform: translate(-50%, 0);
-      z-index: 1;
-      line-height: 200px;
-      font-size: 1.5em;
-      text-shadow: 0px 0px 5px black;
-      cursor: pointer; }
-    #category-container div img {
-      position: relative;
-      transform: translate(-50%, -50%) scale(1);
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: 200px;
-      display: block;
-      object-fit: cover;
-      opacity: 0.75; }
-    #category-container div span:hover + img {
-      cursor: pointer;
-      transform: translate(-50%, -50%) scale(1.2);
-      filter: blur(7px); }
-    #category-container div img:hover {
-      cursor: pointer;
-      transform: translate(-50%, -50%) scale(1.2);
-      filter: blur(7px); }
+    #category-container div a {
+      text-decoration: none;
+      color: white; }
+      #category-container div a span {
+        position: absolute;
+        transform: translate(-50%, 0);
+        z-index: 1;
+        line-height: 200px;
+        font-size: 1.5em;
+        text-shadow: 0px 0px 5px black;
+        cursor: pointer; }
+      #category-container div a img {
+        position: relative;
+        transform: translate(-50%, 0) scale(1);
+        left: 50%;
+        width: 100%;
+        height: 200px;
+        display: block;
+        object-fit: cover;
+        opacity: 0.75;
+        transition: all 0.5s; }
+      #category-container div a span:hover + img {
+        cursor: pointer;
+        transform: translate(-50%, 0) scale(1.2);
+        filter: blur(7px); }
+      #category-container div a img:hover {
+        cursor: pointer;
+        transform: translate(-50%, 0) scale(1.2);
+        filter: blur(7px); }

@@ -15,7 +15,7 @@ $(document).ready(function() {
         }
         else {
             $(".category").css("opacity","0"); 
-            $(".category").css("right","10px");
+            $(".category").css("right","50px");
         }
     });
 

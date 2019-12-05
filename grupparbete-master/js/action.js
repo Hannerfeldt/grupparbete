@@ -13,8 +13,6 @@ $(document).ready(function() {
         this.genre = [];
     }
     
-    let actionobjects = [];
-
     for ( let i = 0; i < actionlist.length; i++){
         let a = $.ajax("https://api.themoviedb.org/3/find/"+actionlist[i] +"?api_key=990c8bcf3ed6fe9927c44ba174b1574d&language=en-US&external_source=imdb_id", {
             method:'GET',
@@ -38,6 +36,7 @@ $(document).ready(function() {
             else {
                 product.price = 129;
             }
+
             let imgcontainer = $('<div>');
             imgcontainer.attr("class", "imgcontainer")
                         .appendTo($('#product-container'));
@@ -50,4 +49,19 @@ $(document).ready(function() {
                 .appendTo(imgcontainer);
         });
     }
+    let o = 0;
+    $(".fa-sliders-h").on("click", function() {
+      
+        if (o == 0) {
+            $("#side-filter-overlay").css("width", "600");
+            o = 1;
+        }
+        else {
+            $("#side-filter-overlay").css("width", "80");
+            o = 0;
+        }
+
+    });
+
+
 });
