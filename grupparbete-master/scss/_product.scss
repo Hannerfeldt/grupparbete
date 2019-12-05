@@ -1,0 +1,19 @@
+#product-container {
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgb(24, 24, 24), rgb(46, 46, 46));
+    box-sizing: border-box;
+    padding:0 10%;
+    .imgcontainer {
+        width:26%;
+        object-fit: cover;
+        overflow: hidden;
+        color:white;
+        img {
+            width:100%;
+            
+        }
+    }
+} 
